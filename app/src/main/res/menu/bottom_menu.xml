@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuScanner"
+        android:icon="@drawable/scanner_icon_menu"
+        android:title="Skaynerlash" />
+
+    <item
+        android:id="@+id/menuKiritish"
+        android:icon="@drawable/input_menu_icon"
+        android:title="Kiritish" />
+
+    <item
+        android:id="@+id/menuDasturhaqida"
+        android:icon="@drawable/info_menu_icon"
+        android:title="Dastur haqida" />
+
+
+</menu>

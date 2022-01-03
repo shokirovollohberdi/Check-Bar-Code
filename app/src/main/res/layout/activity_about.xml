@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    app:layoutDescription="@xml/activity_about_scene"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageMy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/my_photo"
+        app:layout_constraintBottom_toTopOf="@id/nestedScroll"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageMy"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baumans"
+                android:text="Assalomu alaykum.
+
+Ushbu dastur Ollohberdi Shokirov tomonidan ishlab chiqildi.
+
+Dastur g'oyasi haqida qisqacha:
+Men ( Ollohberdi Shokirov )ga bu dastur g'oyasi dastur ishlab chiqilishidan tahminan 2 yil oldin kelgan edi. Lekin anashu paytlari men dasturlashdan habarim yo'qligi sababli bu dasturni ishlab chiqish kechiktirilgan edi. Manashu dastur g'oyasi menga dasturlashni o'rganishimga oz bo'lsada turtki bo'lgan desam, hech ham mubolag'a bo'lmaydi.
+
+Bu dastur nimalar qila oladi?
+Siz ushbu dasturda har bir mahsulotni shtrix kodlari orqali maxsulotni soxta yoki haqiqiy ekanligini bilib olishingiz mumkin. Shunda o'zingiz olgan maxsulotga bo'lgan ishonch yanada ortadi.
+
+Dasturdan foydalanish uchun yo'riqnoma:
+Bu dasturdan maxsulotni haqiqiy ekanligini aniqlashning ikki yo'li mavjud:
+1. Skaynerlash
+2. Maxsulot shtrix kodini qo'lda terish
+1- usulimiz sizga eng qulay yo'l bo'lishi mumkin ammo kichik shtrix kodga ega bo'lgan maxsulotlarni 2- usulimiz orqali tekshirib ko'rishingiz mumkin bo'ladi.
+"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Fikr va mulohazalar"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/telegram"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icontelegram"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/instagram"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/iconinstagram"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tiktok"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icontiktok"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
